@@ -157,7 +157,7 @@ const Projects = () => {
         'Responsive'
       ],
       links: {
-        github: 'https://github.com/TeoLoop/PortfolioMateoLopez'
+        github: 'https://github.com/TeoLoop/PortfolioV2'
       },
       status: 'Completado',
       year: '2024'

@@ -11,19 +11,12 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    // Detectar preferencia del sistema
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const savedTheme = localStorage.getItem('theme');
-    
-    if (savedTheme) {
-      setDarkMode(savedTheme === 'dark');
-    } else {
-      setDarkMode(prefersDark);
-    }
+    // Aquí podés eliminar la lógica de preferencia y localStorage para que no cambie al cargar
+    document.documentElement.classList.add('dark');
   }, []);
 
   useEffect(() => {

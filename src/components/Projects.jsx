@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Eye, Star, Filter } from 'lucide-react';
 import '../styles/Projects.css'
+import nomadax from '../assets/nomadax.png'
+import todolist from '../assets/todolist.png'
+import shoppingcart from '../assets/shoppingcart.png'
+import chatgo from '../assets/chatgo.png'
+import clima from '../assets/clima.png'
+import movies from '../assets/movies.png'
+import landing from '../assets/landing.png'
+import portfolio from '../assets/portfolio.png'
+import authservice from '../assets/authservice.png'
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -11,7 +20,7 @@ const Projects = () => {
       id: 1,
       title: 'NomadaX',
       description: 'NomadaX es una plataforma académica en desarrollo para reservas de alojamientos temporales, inspirada en Airbnb. Utiliza React, Spring Boot y MySQL, con Docker Compose para facilitar su ejecución local. Incluye un panel de administración para una gestión eficiente de hoteles.',
-      image: '/api/placeholder/600/400',
+      image: nomadax,
       category: 'fullstack',
       technologies: ['React', 'Java', 'MySQL', 'Docker'],
       features: [
@@ -25,13 +34,13 @@ const Projects = () => {
         github: 'https://github.com/TeoLoop/NomadaX',
       },
       status: 'Completado',
-      year: '2024'
+      year: '2025'
     },
     {
       id: 2,
       title: 'To Do List con React',
       description: 'Gestor de tareas simple e intuitivo para organizar tu día.',
-      image: '/api/placeholder/600/400',
+      image: todolist,
       category: 'frontend',
       technologies: ['React', 'CSS'],
       features: [
@@ -49,7 +58,7 @@ const Projects = () => {
       id: 3,
       title: 'Carrito de compras con React',
       description: 'Simulación de un e-commerce con funcionalidad de carrito y filtros.',
-      image: '/api/placeholder/600/400',
+      image: shoppingcart,
       category: 'frontend',
       technologies: ['React', 'CSS', 'Fake Store API'],
       features: [
@@ -67,7 +76,7 @@ const Projects = () => {
       id: 4,
       title: 'Chat en tiempo real con Angular',
       description: 'Aplicación de chat desarrollada con Angular y backend con WebSockets.',
-      image: '/api/placeholder/600/400',
+      image: chatgo,
       category: 'fullstack',
       technologies: ['Angular', 'Node.js', 'Socket.IO'],
       features: [
@@ -85,7 +94,7 @@ const Projects = () => {
       id: 5,
       title: 'App de clima con React',
       description: 'Consulta del clima en tiempo real usando APIs externas.',
-      image: '/api/placeholder/600/400',
+      image: clima,
       category: 'frontend',
       technologies: ['React', 'API REST', 'CSS'],
       features: [
@@ -103,7 +112,7 @@ const Projects = () => {
       id: 6,
       title: 'App de películas con React',
       description: 'Explorador de películas consumiendo la API de TheMovieDB.',
-      image: '/api/placeholder/600/400',
+      image: movies,
       category: 'frontend',
       technologies: ['React', 'CSS', 'API-TheMovieDB'],
       features: [
@@ -121,7 +130,7 @@ const Projects = () => {
       id: 7,
       title: 'Landing Page HTML y CSS',
       description: 'Página de presentación simple, estática y responsive.',
-      image: '/api/placeholder/600/400',
+      image: landing,
       category: 'frontend',
       technologies: ['HTML', 'CSS'],
       features: [
@@ -139,7 +148,7 @@ const Projects = () => {
       id: 8,
       title: 'Portafolio Personal',
       description: 'Portafolio web desarrollado con React y Java Spring Boot, donde presento mis proyectos como desarrollador FullStack. Incluye integración con una API propia, diseño moderno y enfoque responsive.',
-      image: '/api/placeholder/600/400',
+      image: portfolio,
       category: 'fullstack',
       technologies: ['React', 'Java', 'Spring Boot', 'CSS', 'HTML', 'H2'],
       features: [
@@ -152,6 +161,22 @@ const Projects = () => {
       },
       status: 'Completado',
       year: '2024'
+    },
+    {
+      id: 9,
+      title: 'Servicio de autenticacion',
+      description: 'Este microservicio proporciona funcionalidades de autenticación y registro de usuarios utilizando Spring Boot, Spring Security y JWT. Es parte de un ecosistema de microservicios más grande.',
+      image: authservice,
+      category: 'backend',
+      technologies: ['Java', 'Spring Boot', 'MySQL'],
+      features: [
+        'Login, Register, Roles'
+      ],
+      links: {
+        github: 'https://github.com/TeoLoop/AuthService'
+      },
+      status: 'Completado',
+      year: '2025'
     }
   ];
 
@@ -215,6 +240,7 @@ const Projects = () => {
               onMouseLeave={() => setHoveredProject(null)}
             >
               <div className="project-image">
+              <img src={project.image} alt={project.title} className="project-img" />
                 <div className="image-placeholder">
                   <Eye size={48} />
                 </div>

@@ -77,6 +77,13 @@
     overflow: hidden;
 }
 
+.project-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
 .image-placeholder {
     display: flex;
     align-items: center;

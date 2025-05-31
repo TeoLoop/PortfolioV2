@@ -18,32 +18,26 @@ const Footer = () => {
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com/mateolopez',
+      url: 'https://github.com/TeoLoop',
       icon: <Github size={20} />,
       color: '#333'
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/mateolopez',
+      url: 'https://linkedin.com/in/lopezmateo',
       icon: <Linkedin size={20} />,
       color: '#0077B5'
     },
     {
-      name: 'Twitter',
-      url: 'https://twitter.com/mateolopez',
-      icon: <Twitter size={20} />,
-      color: '#1DA1F2'
-    },
-    {
       name: 'Email',
-      url: 'mailto:hola@mateolopez.dev',
+      url: 'mailto:matelopez2830@gmail.com',
       icon: <Mail size={20} />,
       color: '#EA4335'
     }
   ];
 
   const technologies = [
-    'React', 'Node.js', 'TypeScript', 'Python', 'AWS', 'Docker'
+    'Java', 'React', 'Javascript', '.NET', 'AWS', 'Docker'
   ];
 
   const scrollToTop = () => {
@@ -124,7 +118,7 @@ const Footer = () => {
               </div>
               <div className="contact-info">
                 <p className="contact-item">
-                  📧 hola@mateolopez.dev
+                  📧 matelopez2830@gmail.com
                 </p>
                 <p className="contact-item">
                   📍 Montevideo, Uruguay
@@ -146,7 +140,7 @@ const Footer = () => {
               </button>
               <div className="footer-stats">
                 <div className="stat">
-                  <span className="stat-number">50+</span>
+                  <span className="stat-number">9+</span>
                   <span className="stat-label">Proyectos</span>
                 </div>
                 <div className="stat">

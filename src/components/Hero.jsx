@@ -19,7 +19,7 @@ const Hero = () => {
       const current = loopNum % titles.length;
       const fullText = titles[current];
 
-      setText(isDeleting 
+      setText(isDeleting
         ? fullText.substring(0, text.length - 1)
         : fullText.substring(0, text.length + 1)
       );
@@ -50,55 +50,57 @@ const Hero = () => {
             <div className="hero-greeting animate-fade-in-up">
               <span className="text-accent">Hola, soy</span>
             </div>
-            
+
             <h1 className="hero-name animate-fade-in-up">
               Mateo López
             </h1>
-            
+
             <div className="hero-title animate-fade-in-up">
               <span className="typing-text">{text}</span>
               <span className="cursor">|</span>
             </div>
-            
+
             <p className="hero-description animate-fade-in-up">
-            Desarrollador Full Stack con experiencia en implementación de software y una sólida base en frontend y backend. Me especializo en crear experiencias web modernas y funcionales, aplicando buenas prácticas y código limpio.
-            <br />
-Completé la certificación Professional Developer en Digital House, trabajando con tecnologías como Java, .NET, React.js, HTML, CSS, JavaScript, MySQL, metodologías ágiles y administración de servidores Linux. Apasionado por seguir aprendiendo y creciendo profesionalmente.
+              Desarrollador Full Stack con experiencia en implementación de software y una sólida base en frontend y backend. Me especializo en crear experiencias web modernas y funcionales, aplicando buenas prácticas y código limpio.
+              <br />
+              Completé la certificación Professional Developer en Digital House, trabajando con tecnologías como Java, .NET, React.js, HTML, CSS, JavaScript, MySQL, metodologías ágiles y administración de servidores Linux. Apasionado por seguir aprendiendo y creciendo profesionalmente.
             </p>
-            
+
             <div className="hero-actions animate-fade-in-up">
-              <button 
+              <button
                 onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
                 className="btn btn-primary"
               >
                 Ver mis proyectos
               </button>
-              <button className="btn btn-secondary">
-                <Download size={20} />
-                Descargar CV
-              </button>
+              <a href="../../public/MateoLopezCV.pdf" download>
+                <button className="btn btn-secondary">
+                  <Download size={20} />
+                  Descargar CV
+                </button>
+              </a>
             </div>
-            
+
             <div className="hero-social animate-fade-in-up">
-              <a 
-                href="https://github.com/TeoLoop" 
-                target="_blank" 
+              <a
+                href="https://github.com/TeoLoop"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
                 aria-label="GitHub"
               >
                 <Github size={24} />
               </a>
-              <a 
-                href="https://www.linkedin.com/in/lopezmateo/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/lopezmateo/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={24} />
               </a>
-              <a 
+              <a
                 href="mailto:matelopez2830@gmail.com"
                 className="social-link"
                 aria-label="Email"
@@ -107,7 +109,7 @@ Completé la certificación Professional Developer en Digital House, trabajando 
               </a>
             </div>
           </div>
-          
+
           <div className="hero-visual animate-slide-in-right">
             <div className="hero-avatar">
               <div className="avatar-bg"></div>
@@ -117,8 +119,8 @@ Completé la certificación Professional Developer en Digital House, trabajando 
             </div>
           </div>
         </div>
-        
-        <button 
+
+        <button
           onClick={scrollToNext}
           className="scroll-indicator"
           aria-label="Scroll to next section"

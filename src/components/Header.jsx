@@ -42,7 +42,7 @@ const Header = () => {
         <div className="header-content">
           {/* Logo */}
           <div className="logo">
-            <span className="logo-text">
+            <span className="logo-text-header">
               <span className="text-accent">{'<'}</span>
               Mateo López
               <span className="text-accent">{' />'}</span>

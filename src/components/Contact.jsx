@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, MessageCircle, Linkedin, Github, Twitter, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, MessageCircle, Linkedin, Github, CheckCircle, AlertCircle } from 'lucide-react';
 import '../styles/Contact.css'
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,14 +18,14 @@ const Contact = () => {
     {
       icon: <Mail size={24} />,
       label: 'Email',
-      value: 'hola@mateolopez.dev',
-      link: 'mailto:hola@mateolopez.dev'
+      value: 'matelopez2830@gmail.com',
+      link: 'mailto:matelopez2830@gmail.com'
     },
     {
       icon: <Phone size={24} />,
       label: 'Teléfono',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      value: '+598 (95) 744-084',
+      link: 'tel:+59895744084'
     },
     {
       icon: <MapPin size={24} />,
@@ -43,19 +45,13 @@ const Contact = () => {
     {
       icon: <Github size={20} />,
       label: 'GitHub',
-      url: 'https://github.com/mateolopez',
+      url: 'https://github.com/TeoLoop',
       color: '#333'
-    },
-    {
-      icon: <Twitter size={20} />,
-      label: 'Twitter',
-      url: 'https://twitter.com/mateolopez',
-      color: '#1DA1F2'
     },
     {
       icon: <MessageCircle size={20} />,
       label: 'WhatsApp',
-      url: 'https://wa.me/15551234567',
+      url: 'https://wa.me/+59895744084',
       color: '#25D366'
     }
   ];
@@ -71,13 +67,27 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+  
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+      time: new Date().toLocaleString('es-UY')
+    };
     
-    // Simular envío del formulario
+  
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await emailjs.send(
+        'service_6kvnydr',
+        'template_zffhs07',
+        templateParams,
+        'XuNOHoLJ_0TG69GXx'
+      );
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
+      console.error('Error enviando email:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -141,7 +151,6 @@ const Contact = () => {
                       style={{ '--social-color': social.color }}
                     >
                       {social.icon}
-                      <span>{social.label}</span>
                     </a>
                   ))}
                 </div>
@@ -263,12 +272,12 @@ const Contact = () => {
               no dudes en llamarme o enviarme un mensaje por WhatsApp.
             </p>
             <div className="cta-buttons">
-              <a href="tel:+15551234567" className="btn btn-primary">
+              <a href="tel:+59895744084" className="btn btn-primary">
                 <Phone size={20} />
                 Llamar ahora
               </a>
               <a 
-                href="https://wa.me/15551234567" 
+                href="https://wa.me/+59895744084" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="btn btn-secondary"

@@ -70,11 +70,12 @@ const Skills = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
+        console.log('Is intersecting:', entry.isIntersecting);
         if (entry.isIntersecting) {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.05}
     );
 
     if (sectionRef.current) {

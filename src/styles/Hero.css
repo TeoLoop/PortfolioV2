@@ -171,12 +171,6 @@
     height: 300px;
 }
 
-@media (min-width: 768px) {
-    .hero-avatar {
-        width: 400px;
-        height: 400px;
-    }
-}
 
 .avatar-bg {
     position: absolute;

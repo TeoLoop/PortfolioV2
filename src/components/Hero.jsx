@@ -73,7 +73,7 @@ const Hero = () => {
               >
                 Ver mis proyectos
               </button>
-              <a href="../../public/MateoLopezCV.pdf" download>
+              <a href="/MateoLopezCV.pdf" download>
                 <button className="btn btn-secondary">
                   <Download size={20} />
                   Descargar CV

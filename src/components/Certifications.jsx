@@ -15,7 +15,7 @@ const Certifications = () => {
       category: 'backend',
       status: 'active',
       skills: ['Java', 'React', 'Cloud Computing', 'Database'],
-      verificationUrl: 'https://cloud.google.com/certification/verify/67890',
+      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/details/certifications/1748832826935/single-media-viewer/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0',
       description: 'Formación intensiva en desarrollo fullstack con enfoque en tecnologías como HTML, CSS, JavaScript, React, Java con Spring Boot, MySQL y AWS. Incluye prácticas en metodologías ágiles, testing y habilidades profesionales como comunicación efectiva y trabajo en equipo.',
       logo: '/api/placeholder/80/80'
     },

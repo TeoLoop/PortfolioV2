@@ -5,6 +5,7 @@
     box-sizing: border-box;
   }
   
+  
   :root {
     /* Colores para tema claro */
     --bg-primary: #ffffff;
@@ -51,6 +52,10 @@
     color: var(--text-primary);
     background-color: var(--bg-primary);
     transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  body, html {
+    overflow-x: hidden;
   }
   
   /* Componente principal */

@@ -7,10 +7,25 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: 'Antel',
+      position: 'Software Developer',
+      location: 'Montevideo, Uruguay',
+      period: '2025 - Presente',
+      type: 'Tiempo completo',
+      description: 'Desarrollo y mantenimiento de aplicaciones empresariales con Java (Spring Boot) y React.js, aplicando principios de arquitectura de microservicios.',
+      achievements: [
+        'Lideré el diseño e implementación de pipelines CI/CD para despliegues automatizados en Kubernetes y Docker, asegurando la escalabilidad del sistema',
+        'Desarrollo de APIs RESTful de alto rendimiento y optimización de datos con Solr y Postgres',
+        'Participación en el desarrollo de componentes front-end con React.js, mejorando la experiencia de usuario y el rendimiento de las aplicaciones',
+        'Colaboración en equipos ágiles (Scrum) para entregar soluciones eficientes y alineadas a los objetivos del negocio'
+      ],
+      technologies: ['Java', 'Spring Boot', 'React.js', 'Kubernetes', 'Docker', 'Solr', 'PostgreSQL', 'Microservicios', 'CI/CD', 'Scrum']
+    },
+    {
       company: 'Codere',
       position: 'Implementador de Software',
       location: 'Montevideo, Uruguay',
-      period: '2022 - Presente',
+      period: '2022 - 2025',
       type: 'Tiempo completo',
       description: 'Implementación, mantenimiento y soporte de soluciones tecnológicas en entornos corporativos, trabajando con bases de datos, servicios web y páginas institucionales.',
       achievements: [
@@ -22,8 +37,7 @@ const Experience = () => {
         'Mantuve y actualicé páginas web corporativas utilizando JavaScript, HTML y CSS'
       ],
       technologies: ['JavaScript', 'HTML', 'CSS', 'SQL Server', 'Windows Server', 'WebServices', 'SoapUI', 'JMeter', 'Postman', 'Scrum', 'Jira']
-    }
-    ,
+    },
     {
       company: 'Freelance',
       position: 'Desarrollador Web',
@@ -83,7 +97,7 @@ const Experience = () => {
                       <ExternalLink size={16} className="external-icon" />
                     </div>
                   </div>
-                  
+
                   <div className="experience-meta">
                     <div className="meta-item">
                       <Calendar size={16} />
@@ -103,7 +117,7 @@ const Experience = () => {
                   <p className="text-base text-secondary mb-6">
                     {exp.description}
                   </p>
-                  
+
                   <div className="achievements">
                     <h4 className="heading-4 mb-4">Logros destacados:</h4>
                     <ul className="achievements-list">

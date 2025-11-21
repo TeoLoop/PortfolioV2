@@ -35,17 +35,16 @@ const About = () => {
 
             <div className="about-description">
               <p className="text-base mb-6">
-                Soy un desarrollador Full Stack con formación sólida y experiencia en implementación de software. A lo largo de los últimos años, trabajé como implementador, y complementé mi formación con proyectos propios y académicos, donde utilicé tecnologías como Java, React y MySQL, fortaleciendo mis habilidades tanto en frontend como en backend.
+                Desarrollador de Software Full Stack, con más de 3 años de experiencia en el ámbito del desarrollo, mantenimiento y optimización de aplicaciones empresariales. Especializado en backend con Java y Spring Boot, aplicando prácticas DevOps, CI/CD, Docker y Kubernetes para crear soluciones escalables y de alto rendimiento.
               </p>
 
               <p className="text-base mb-6">
-                Me gusta enfocarme en soluciones funcionales y mantenibles, priorizando siempre la claridad del código y el trabajo en equipo. Disfruto enfrentar desafíos técnicos y aprender de cada experiencia, ya sea integrando servicios, automatizando procesos o mejorando la experiencia del usuario.
+                También cuento con experiencia en React.js para el desarrollo de interfaces modernas, así como en bases de datos relacionales y Solr para búsquedas eficientes. Apasionado por la mejora continua, el trabajo en equipo y las buenas prácticas de ingeniería.
               </p>
 
               <p className="text-base mb-8">
-                Finalicé la certificación Professional Developer en Digital House junto a Mercado Libre y Globant, sigo formándome día a día. Me interesa estar al tanto de las herramientas y buenas prácticas del desarrollo moderno, con el objetivo de seguir creciendo y aportar valor real a cada proyecto en el que participo.
+                Actualmente me sigo formando de manera continua, con el objetivo de seguir creciendo en entornos cloud, backend y arquitectura de software.
               </p>
-
 
               <div className="interests">
                 <h3 className="heading-4 mb-4">Áreas de interés:</h3>

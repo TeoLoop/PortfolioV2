@@ -61,9 +61,7 @@ const Hero = () => {
             </div>
 
             <p className="hero-description animate-fade-in-up">
-              Desarrollador Full Stack con experiencia en implementación de software y una sólida base en frontend y backend. Me especializo en crear experiencias web modernas y funcionales, aplicando buenas prácticas y código limpio.
-              <br />
-              Completé la certificación Professional Developer en Digital House, trabajando con tecnologías como Java, .NET, React.js, HTML, CSS, JavaScript, MySQL, metodologías ágiles y administración de servidores Linux. Apasionado por seguir aprendiendo y creciendo profesionalmente.
+              Desarrollador de Software Full Stack con más de 3 años de experiencia en desarrollo, mantenimiento y optimización de aplicaciones empresariales. Especializado en backend con Java y Spring Boot, aplicando prácticas DevOps, CI/CD, Docker y Kubernetes para crear soluciones escalables y de alto rendimiento.
             </p>
 
             <div className="hero-actions animate-fade-in-up">

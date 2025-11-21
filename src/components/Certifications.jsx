@@ -15,7 +15,7 @@ const Certifications = () => {
       category: 'backend',
       status: 'active',
       skills: ['Java', 'React', 'Cloud Computing', 'Database'],
-      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/details/certifications/1748832826935/single-media-viewer/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0',
+      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/overlay/Certifications/597891503/treasury/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0',
       description: 'Formación intensiva en desarrollo fullstack con enfoque en tecnologías como HTML, CSS, JavaScript, React, Java con Spring Boot, MySQL y AWS. Incluye prácticas en metodologías ágiles, testing y habilidades profesionales como comunicación efectiva y trabajo en equipo.',
       logo: '/api/placeholder/80/80'
     },
@@ -28,7 +28,7 @@ const Certifications = () => {
       category: 'cloud',
       status: 'active',
       skills: ['AWS', 'Cloud Architecture', 'EC2', 'S3', 'RDS'],
-      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/overlay/education/1077043184/multiple-media-viewer/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0&treasuryMediaId=1748524785514',
+      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/overlay/Certifications/602035571/treasury/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0',
       description: 'Certificación que valida la experiencia en el diseño de sistemas distribuidos en AWS.',
       logo: '/api/placeholder/80/80'
     },
@@ -41,7 +41,7 @@ const Certifications = () => {
       category: 'backend',
       status: 'active',
       skills: ['Java', 'Spring Boot', 'Spring Security', 'Spring Data', 'Hibernate'],
-      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/details/certifications/1745467989803/single-media-viewer/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0',
+      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/overlay/Certifications/602483297/treasury/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0',
       description: 'Certificación en desarrollo backend con Java y el ecosistema de Spring.',
       logo: '/api/placeholder/80/80'
     },
@@ -54,20 +54,20 @@ const Certifications = () => {
       category: 'database',
       status: 'active',
       skills: ['SQL', 'NoSQL', 'Aggregation', 'Indexing', 'Sharding'],
-      verificationUrl: 'https://www.linkedin.com/learning/certificates/ab18d5578ea20c9b4d82654bc3055548664d537d69310900bbfb6d4882eeeebc?u=262407930',
+      verificationUrl: 'https://www.linkedin.com/learning/certificates/ab18d5578ea20c9b4d82654bc3055548664d537d69310900bbfb6d4882eeeebc',
       description: 'Certificación en desarrollo de bases de datos por Linkedin Learning.',
       logo: '/api/placeholder/80/80'
     },
     {
       id: 5,
-      title: 'Web Developer',
+      title: 'Web Designer',
       issuer: 'Digital House',
       date: '2023',
       expiryDate: '2026',
       category: 'frontend',
       status: 'active',
       skills: ['Javascript', 'HTML5', 'CSS3', 'Sass'],
-      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/details/certifications/1744046968152/single-media-viewer/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0',
+      verificationUrl: 'https://www.linkedin.com/in/lopezmateo/overlay/Certifications/602741392/treasury/?profileId=ACoAACM8HcEB1i-lBh7r2Xs7qdghBuHLbPMpEE0',
       description: 'Certificación que valida competencias en desarrollo web basico',
       logo: '/api/placeholder/80/80'
     }

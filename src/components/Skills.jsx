@@ -24,7 +24,8 @@ const Skills = () => {
       skills: [
         { name: 'Java', level: 82, color: '#DC382D' },
         { name: 'Python', level: 40, color: '#3776AB' },
-        { name: 'REST APIs', level: 92, color: '#FF6B35' }
+        { name: 'REST APIs', level: 92, color: '#FF6B35' },
+        { name: 'Spring Boot', level: 85, color: '#FF6B35' }
       ]
     },
     {
@@ -32,18 +33,31 @@ const Skills = () => {
       icon: Database,
       skills: [
         { name: 'MSSQL', level: 85, color: '#336791' },
+        { name: 'PostgreSQL', level: 85, color: '#3B82F6' },
         { name: 'MongoDB', level: 62, color: '#47A248' },
-        { name: 'MySQL', level: 85, color: '#4479A1' }
+        { name: 'MySQL', level: 85, color: '#4479A1' },
+        { name: 'SolR', level: 70, color: '#ee4917ff' }
       ]
     },
     {
       title: 'DevOps & Cloud',
       icon: Cloud,
       skills: [
-        { name: 'AWS', level: 25, color: '#FF9900' },
+        { name: 'AWS', level: 45, color: '#FF9900' },
         { name: 'Docker', level: 80, color: '#2496ED' },
+        { name: 'Kubernetes', level: 70, color: '#326CE5' },
         { name: 'Git', level: 95, color: '#F05032' },
         { name: 'CI/CD', level: 40, color: '#326CE5' }
+      ]
+    },
+    {
+      title: 'Observabilidad',
+      icon: Palette,
+      skills: [
+        { name: 'Prometheus', level: 80, color: '#FF6B6B' },
+        { name: 'Grafana', level: 95, color: '#4ECDC4' },
+        { name: 'Elasticsearch', level: 75, color: '#96CEB4' },
+        { name: 'Kibana', level: 85, color: '#FFEAA7' }
       ]
     },
     {
@@ -52,7 +66,8 @@ const Skills = () => {
       skills: [
         { name: 'VS Code', level: 95, color: '#007ACC' },
         { name: 'Figma', level: 80, color: '#F24E1E' },
-        { name: 'Postman', level: 85, color: '#FF6C37' }
+        { name: 'Postman', level: 85, color: '#FF6C37' },
+        { name: 'Jira', level: 85, color: '#FF6C37' }
       ]
     },
     {

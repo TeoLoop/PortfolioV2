@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowDown, Github, Linkedin, Mail, Download } from 'lucide-react';
 import '../styles/Hero.css'
+import FotoPerfil from '../assets/FP.jpg';
 
 const Hero = () => {
   const [text, setText] = useState('');
@@ -112,7 +113,7 @@ const Hero = () => {
             <div className="hero-avatar">
               <div className="avatar-bg"></div>
               <div className="avatar-content">
-                <span className="avatar-text">ML</span>
+                <img src={FotoPerfil} alt="Mateo López" className="avatar-image" />
               </div>
             </div>
           </div>
